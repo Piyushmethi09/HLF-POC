@@ -23,7 +23,7 @@ class Add extends Component {
     handleSubmit(event){ 
       const {  name, colour, size,appraisedValue  } = this.state 
       event.preventDefault() 
-      console.log("-->>",name,colour,size,appraisedValue)
+    
       let obj ={
         appraisedValue,
         name,
@@ -41,7 +41,7 @@ class Add extends Component {
       .then((res)=>{
           console.log('res----->>>>',res.data.status);
           if(res.data.status === 200){
-        
+            alert(`Data added susccesfully`);
           }
           
       })
