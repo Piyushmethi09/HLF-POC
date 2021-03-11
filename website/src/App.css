@@ -234,6 +234,9 @@ nav.fill ul li a:hover:after {
   margin: 10px 0px;
   cursor: pointer;
 }
+.init-wrp{
+  margin: 100px 100px;
+}
 .init-btn{
   background-color: greenyellow;
   color: black;

@@ -8,7 +8,7 @@ class Update extends Component {
     this.state = { modalOpened: false} 
     this.handleChange = this.handleChange.bind(this) 
     this.handleSubmit = this.handleSubmit.bind(this) 
-    this.toggleModal = this.toggleModal.bind(this);
+    
   } 
   handleChange(event){ 
     this.setState({ 

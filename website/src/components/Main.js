@@ -33,9 +33,11 @@ class Main extends Component {
   render(){ 
     return( 
      <div class="row container-fluid">
-      
-       <div class="col-md-12">
-         <button class="init-btn" onClick={this.handleSubmit}>Init</button>
+        <div class="row">
+        <div class="col-md-8"></div>
+       <div class="init-wrp">
+         <button class="init-btn" onClick={this.handleSubmit}>Init Ledger</button>
+         </div>
        </div>
     </div> 
     ) 
