@@ -1,0 +1,144 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": " Node.js-HLF Application API",
+      "description": "Node.js-HLF Application API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:8000",
+    "basePath": "/api/",
+    "tags": [
+     
+    ],
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/init": {
+        "get": {
+          "tags": [
+            "Init Ledger"
+          ],
+          "summary": "Init our ledger",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+            }
+          }
+        }
+      },
+      "/getList": {
+        "get": {
+          "tags": [
+            "Init Ledger"
+          ],
+          "summary": "Init our ledger",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+            }
+          }
+        }
+      },
+      "/assets/:id": {
+        "get": {
+          "tags": [
+            "Init Ledger"
+          ],
+          "summary": "get by id",
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "description": "add assets id here eg. asset12",
+              "schema": {
+                "$ref": "#/definitions/Assets"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Users"
+              }
+            }
+          }
+        }
+      },
+      "/add": {
+        "post": {
+          "tags": [
+            "Init Ledger"
+          ],
+          "parameters": [
+            {
+              "name": "user",
+              "in": "body",
+              "description": "User with new values of properties",
+              "schema": {
+                "$ref": "#/definitions/Assets"
+              }
+            }
+          ],
+          "summary": "add data",
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "$ref": "#/definitions/Assets"
+              }
+            }
+          }
+        }
+      }
+     },
+
+
+     "definitions": {
+      "Assets": {
+      "required": [
+      "name",
+      "assetId",
+      "colour",
+      "size",
+      "appraisedValue"
+      ],
+      "properties": {
+      
+      "colour": {
+      "type": "string"
+      },
+      "size": {
+        "type": "string"
+        },
+      "name": {
+      "type": "string"
+      },
+      "appraisedValue": {
+      "type": "string"
+      }
+      },
+      "Assets": {
+        "type": "array",
+        "$ref": "#/definitions/Assets"
+      }
+     }
+    }
+  }
