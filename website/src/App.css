@@ -234,6 +234,15 @@ nav.fill ul li a:hover:after {
   margin: 10px 0px;
   cursor: pointer;
 }
+.init-btn{
+  background-color: greenyellow;
+  color: black;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
 
 /* Keyframes */
 @-webkit-keyframes fill {

@@ -39,9 +39,12 @@ class Add extends Component {
       // `) 
       action.AddAPI(obj) 
       .then((res)=>{
-          console.log('res----->>>>',res.data.status);
+         
+        
           if(res.data.status === 200){
             alert(`Data added susccesfully`);
+          }else if(res.data.status === 400){
+            alert(`Fill the form Properly`);
           }
           
       })
